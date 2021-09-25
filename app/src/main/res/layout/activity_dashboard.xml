@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/mad_main1"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delivery" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/dChanel"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:srcCompat="@drawable/doctor" />
+
+            <ImageView
+                android:id="@+id/dChanel1"
+                android:layout_width="107dp"
+                android:layout_height="106dp"
+                app:srcCompat="@drawable/pcrbooking" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/delivery"
+                android:layout_width="114dp"
+                android:layout_height="105dp"
+                app:srcCompat="@drawable/delivery" />
+
+            <ImageView
+                android:id="@+id/delivery2"
+                android:layout_width="112dp"
+                android:layout_height="105dp"
+                app:srcCompat="@drawable/hospitalicn" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "934599186697",
+    "project_id": "adikt-healthcare",
+    "storage_bucket": "adikt-healthcare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:934599186697:android:99595106967da9d3ac1bd8",
+        "android_client_info": {
+          "package_name": "com.tech.adikthealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "934599186697-pin78gjihudul7vsefmjo4hncji0quu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5sNJDc91Ggns4gWDlUA8PFDAm2TQFZPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "934599186697-pin78gjihudul7vsefmjo4hncji0quu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

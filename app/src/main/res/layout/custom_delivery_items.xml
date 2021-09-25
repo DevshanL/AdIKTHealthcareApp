@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Deliver nowwwwwww"
+                android:text="Deliver nowwwwwwwww"
                 android:textColor="#FFFFFF"
                 app:backgroundTint="@color/btn" />
         </LinearLayout>

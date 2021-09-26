@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mad_main1"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/mad_main1"
     tools:context=".Dashboard">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/delivery" />
+        android:layout_width="338dp"
+        android:layout_height="267dp"
+        app:srcCompat="@drawable/lmb" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,12 +32,14 @@
                 android:id="@+id/dChanel"
                 android:layout_width="107dp"
                 android:layout_height="103dp"
+                android:rotationX="21"
                 app:srcCompat="@drawable/doctor" />
 
             <ImageView
                 android:id="@+id/dChanel1"
                 android:layout_width="107dp"
                 android:layout_height="106dp"
+                android:rotationX="21"
                 app:srcCompat="@drawable/pcrbooking" />
         </LinearLayout>
 
@@ -53,12 +55,14 @@
                 android:id="@+id/delivery"
                 android:layout_width="114dp"
                 android:layout_height="105dp"
+                android:rotationX="21"
                 app:srcCompat="@drawable/delivery" />
 
             <ImageView
                 android:id="@+id/delivery2"
                 android:layout_width="112dp"
                 android:layout_height="105dp"
+                android:rotationX="21"
                 app:srcCompat="@drawable/hospitalicn" />
 
         </LinearLayout>

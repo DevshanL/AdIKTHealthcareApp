@@ -207,7 +207,7 @@ public class DelveryItems extends AppCompatActivity {
                                         OrderedItems orderedItems = new OrderedItems(id,name,finalval,qty,image,username,nic,contact,address);
                                         reference.child(id).setValue(orderedItems);
 
-                                        Toast.makeText(DelveryItems.this, "Successfully added", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(DelveryItems.this, "Item Successfully added", Toast.LENGTH_SHORT).show();
 
                                         alertDialog.dismiss();
                                     }

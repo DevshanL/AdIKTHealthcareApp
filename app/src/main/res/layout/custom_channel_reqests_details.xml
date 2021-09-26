@@ -14,14 +14,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:background="#600A95B8"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/cd_imagee"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
+                app:civ_border_color="@color/btn"
+                app:civ_border_width="3dp"
                 app:srcCompat="@drawable/doctor" />
 
             <TextView
@@ -101,6 +104,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#C6195978"
             android:orientation="vertical">
 
             <Button
@@ -130,6 +134,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/purple_700"
+        android:background="@color/btn"
         android:orientation="vertical"></LinearLayout>
 </LinearLayout>

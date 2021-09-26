@@ -10,9 +10,15 @@
     tools:context=".Dashboard">
 
     <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="115dp"
+        android:layout_height="83dp"
+        app:srcCompat="@drawable/mainusermini" />
+
+    <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="338dp"
-        android:layout_height="267dp"
+        android:layout_width="313dp"
+        android:layout_height="271dp"
         app:srcCompat="@drawable/lmb" />
 
     <LinearLayout
@@ -22,7 +28,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
@@ -45,7 +51,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">

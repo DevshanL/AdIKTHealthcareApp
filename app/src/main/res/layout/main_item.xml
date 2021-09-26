@@ -41,7 +41,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginRight="75dp"
             android:gravity="left"
-            android:text="Patient's Name"
+            android:text="Patient's Name :"
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold" />

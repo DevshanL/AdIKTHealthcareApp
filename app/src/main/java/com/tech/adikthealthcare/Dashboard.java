@@ -12,7 +12,7 @@ public class Dashboard extends AppCompatActivity {
     ImageView imageView1;
     ImageView imageView2;
 
-    @Override
+    @Overrid
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);

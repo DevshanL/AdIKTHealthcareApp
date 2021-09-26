@@ -80,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="130dp"
-            android:layout_marginRight="100dp"
+            android:layout_marginRight="97dp"
             android:gravity="right"
             android:text="Patient's NIC"
             android:textColor="#000"

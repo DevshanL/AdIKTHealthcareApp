@@ -138,7 +138,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Channel Now"
+        android:text="Channel Now Doctor"
         android:textColor="#FFFFFF"
         app:backgroundTint="@color/btn"
         app:cornerRadius="20dp" />

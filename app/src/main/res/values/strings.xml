@@ -11,4 +11,5 @@
     <string name="buttonSave">Add Details</string>
     <string name="buttonBack">Back</string>
     <string name="textNopcr">textNopcr</string>
+    <string name="pcrprice">pcrPrice</string>
 </resources>

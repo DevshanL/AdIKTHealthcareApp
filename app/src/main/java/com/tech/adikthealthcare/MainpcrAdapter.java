@@ -22,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.ViewHolder;
 
+import java.text.BreakIterator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -47,6 +48,11 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
         holder.address.setText(model.getAddress());
         holder.mobile.setText(model.getMobile());
         holder.email.setText(model.getEmail());
+        holder.pcrPrice.setText(model.getPcrPrice());
+
+        
+
+
 
 
 
@@ -57,7 +63,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
           public void onClick(View view) {
               final DialogPlus dialogPlus= DialogPlus.newDialog(holder.name.getContext())
                       .setContentHolder(new ViewHolder(R.layout.updatepcr))
-                      .setExpanded(true,1900)
+                      .setExpanded(true,1700)
 
                       .create();
 
@@ -164,7 +170,8 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
 
     class myViewHolder extends RecyclerView.ViewHolder{
 
-        TextView name,nic,noPcr,address,mobile,email;
+        
+        TextView name,nic,noPcr,address,mobile,email,pcrPrice;
         Button buttonedit,buttondelete;
 
         public myViewHolder (View itemView){
@@ -176,6 +183,8 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
             address=(TextView)itemView.findViewById(R.id.paddresspcr);
             mobile=(TextView)itemView.findViewById(R.id.pmobilepcr);
             email=(TextView) itemView.findViewById(R.id.pemailpcr);
+            pcrPrice=(TextView) itemView.findViewById(R.id.pcrprice);
+            
 
             buttonedit= (Button) itemView.findViewById(R.id.buttonedit);
             buttondelete=(Button)itemView.findViewById(R.id.buttondelete);

@@ -16,7 +16,7 @@
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_ordered_delivery_items.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_pcrmain.xml" value="0.264" />
-        <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_pcrregister.xml" value="0.2" />
+        <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_pcrregister.xml" value="0.1" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_channel_reqests_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_delivery_item_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_doctor_channel_user.xml" value="0.21510416666666668" />
@@ -56,5 +56,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>

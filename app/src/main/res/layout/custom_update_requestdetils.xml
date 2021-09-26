@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background1"
+    android:background="@drawable/mad_main1"
     android:layout_height="match_parent">
 
     <LinearLayout

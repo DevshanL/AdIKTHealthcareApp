@@ -4,6 +4,7 @@ public class pcrModel {
     String name,nic,address,email;
     String mobile;
     String noPcr;
+    String pcrPrice;
 
     public pcrModel(){
 
@@ -11,13 +12,14 @@ public class pcrModel {
 
 
 
-    public pcrModel(String name, String nic, String noPcr , String address, String mobile, String email) {
+    public pcrModel(String name, String nic, String noPcr , String address, String mobile, String email,String pcrPrice) {
         this.name = name;
         this.nic = nic;
         this.noPcr=noPcr;
         this.address = address;
         this.mobile = mobile;
         this.email = email;
+        this.pcrPrice=pcrPrice;
     }
 
     public  String getName() {
@@ -32,6 +34,13 @@ public class pcrModel {
         return nic;
     }
 
+    public String getPcrPrice() {
+        return pcrPrice;
+    }
+
+    public void setPcrPrice(String pcrPrice) {
+        this.pcrPrice = pcrPrice;
+    }
 
     public void setNic(String nic) {
         this.nic = nic;

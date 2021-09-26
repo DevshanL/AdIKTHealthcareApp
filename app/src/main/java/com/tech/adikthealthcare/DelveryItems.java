@@ -200,7 +200,7 @@ public class DelveryItems extends AppCompatActivity {
                                         String name = textView2.getText().toString();
                                         Integer price = Integer.valueOf(textView3.getText().toString());
 
-                                        Integer tax = (price*2) / 100 ;
+                                        Integer tax = (price*2) / 10;
                                         Integer total = Integer.valueOf(price+tax);
                                         String finalval = String.valueOf(total * qtyval);
 

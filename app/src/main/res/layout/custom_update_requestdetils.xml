@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:ems="10"
-        android:hint="Enter contact Numbe"
+        android:hint="Enter contact Number"
         android:inputType="textPersonName" />
 
     <EditText

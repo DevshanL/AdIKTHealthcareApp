@@ -69,7 +69,7 @@
             android:layout_marginTop="130dp"
             android:layout_marginRight="75dp"
             android:gravity="left"
-            android:text="Patient's NIC"
+            android:text="Patient's NIC     :"
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold" />

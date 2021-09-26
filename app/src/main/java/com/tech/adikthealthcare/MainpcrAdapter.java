@@ -36,7 +36,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
      * @param options
      */
     public <FirebaseRecyclerOptions> MainpcrAdapter(@NonNull FirebaseRecyclerOptions options) {
-        super((com.firebase.ui.database.FirebaseRecyclerOptions<pcrModel>) options);
+        super((com.firebase.ui.database.FirebaseRecyclerOptions<pcrModel>) options) ;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
           public void onClick(View view) {
               final DialogPlus dialogPlus= DialogPlus.newDialog(holder.name.getContext())
                       .setContentHolder(new ViewHolder(R.layout.updatepcr))
-                      .setExpanded(true,1300)
+                      .setExpanded(true,1900)
 
                       .create();
 
@@ -95,7 +95,8 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
                        map.put("mobile",mobile.getText().toString());
                        map.put("email",email.getText().toString());
 
-                       FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr")
+                       FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
+                               .getReference().child("patients_pcr")
                                .child(Objects.requireNonNull(getRef(position).getKey())).updateChildren(map)
                                .addOnSuccessListener(new OnSuccessListener<Void>() {
                                    @Override
@@ -159,11 +160,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
         return new myViewHolder(view);
     }
 
-    public void startListening() {
-    }
 
-    public void stopListening() {
-    }
 
     class myViewHolder extends RecyclerView.ViewHolder{
 

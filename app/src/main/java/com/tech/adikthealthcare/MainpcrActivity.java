@@ -32,10 +32,11 @@ public class MainpcrActivity extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.rvpcr);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
+        recyclerView.setLayoutManager(new CustomLinearLayoutManager(this));
         FirebaseRecyclerOptions<pcrModel> options =
                 new FirebaseRecyclerOptions.Builder<pcrModel>()
-                        .setQuery(FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr"), pcrModel.class)
+                        .setQuery(FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
+                                .getReference().child("patients_pcr"), pcrModel.class)
                         .build();
 
         mainAdapter=new MainpcrAdapter(options);

@@ -44,7 +44,7 @@ public class Dashboard extends AppCompatActivity {
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, pcrregister.class);
+                Intent intent = new Intent(Dashboard.this, MainpcrActivity.class);
                 startActivity(intent);
             }
         });

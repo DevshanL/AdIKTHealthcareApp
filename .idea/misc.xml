@@ -9,20 +9,25 @@
         <entry key="..\:/Machine Folder/app/src/main/res/drawable/pcr_add.xml" value="0.14635416666666667" />
         <entry key="..\:/Machine Folder/app/src/main/res/drawable/rounded.xml" value="0.14635416666666667" />
         <entry key="..\:/Machine Folder/app/src/main/res/drawable/search_pcr.xml" value="0.1" />
-        <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_channel_requests.xml" value="0.13020833333333334" />
+        <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_channel_requests.xml" value="0.2" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_dashboard.xml" value="0.13020833333333334" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_delvery_items.xml" value="0.13020833333333334" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_doctor_channel.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_ordered_delivery_items.xml" value="0.25416666666666665" />
+        <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_pcrmain.xml" value="0.264" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/activity_pcrregister.xml" value="0.2" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_channel_reqests_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_delivery_item_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_doctor_channel_user.xml" value="0.21510416666666668" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_doctors.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_update_orders.xml" value="0.25416666666666665" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/custom_update_requestdetils.xml" value="0.25416666666666665" />
+        <entry key="..\:/Machine Folder/app/src/main/res/layout/main_item.xml" value="0.264" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/searchpcr.xml" value="0.1" />
         <entry key="..\:/Machine Folder/app/src/main/res/layout/updatepcr.xml" value="0.25416666666666665" />
+        <entry key="..\:/Machine Folder/app/src/main/res/menu/searchpcr.xml" value="0.25416666666666665" />
+        <entry key="..\:/Machine Folder/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Devshan/Desktop/AdIKTHealthcare/app/src/main/res/layout/activity_dashboard.xml" value="0.264" />
         <entry key="..\:/Users/Devshan/Desktop/AdIKTHealthcare/app/src/main/res/layout/activity_main.xml" value="0.3111111111111111" />
         <entry key="..\:/Users/Devshan/Desktop/AdIKTHealthcare1/app/src/main/res/drawable/background1.xml" value="0.264" />

@@ -86,7 +86,8 @@ public class pcrregister extends AppCompatActivity {
             map.put("mobile", mobile.getText().toString());
             map.put("email", email.getText().toString());
 
-            FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr").push()
+            FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
+                    .getReference().child("patients_pcr").push()
                     .setValue(map)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override

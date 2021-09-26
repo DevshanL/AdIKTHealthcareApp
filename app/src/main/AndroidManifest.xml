@@ -11,7 +11,7 @@
         android:theme="@style/Theme.AdIKTHealthcare">
         <activity android:name=".OrderedDeliveryItems"></activity>
         <activity android:name=".ChannelRequests" />
-        <activity android:name=".DelveryItems" />
+
         <activity android:name=".DoctorChannel" />
         <activity android:name=".Dashboard" />
         <activity android:name=".MainActivity">
@@ -44,7 +44,25 @@
             </intent-filter>
 
 
+        </activity >
+        <activity android:name=".DelveryItems">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+
+
         </activity>
+
+
+
+
+
+
 
     </application>
 

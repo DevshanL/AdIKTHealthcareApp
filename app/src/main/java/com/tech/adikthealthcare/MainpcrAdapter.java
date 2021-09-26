@@ -95,7 +95,8 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
                        map.put("mobile",mobile.getText().toString());
                        map.put("email",email.getText().toString());
 
-                       FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr")
+                       FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
+                               .getReference().child("patients_pcr")
                                .child(Objects.requireNonNull(getRef(position).getKey())).updateChildren(map)
                                .addOnSuccessListener(new OnSuccessListener<Void>() {
                                    @Override

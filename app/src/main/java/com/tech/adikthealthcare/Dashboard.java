@@ -32,14 +32,14 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, DelveryItems.class);
-                startActivity(intent);
-            }
-        });
+//
+//        imageView2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(Dashboard.this, DeliveryItems.class);
+//                startActivity(intent);
+//            }
+//        });
 
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -32,10 +32,11 @@ public class MainpcrActivity extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.rvpcr);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-
+        recyclerView.setLayoutManager(new CustomLinearLayoutManager(this));
         FirebaseRecyclerOptions<pcrModel> options =
                 new FirebaseRecyclerOptions.Builder<pcrModel>()
-                        .setQuery(FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr"), pcrModel.class)
+                        .setQuery(FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
+                                .getReference().child("patients_pcr"), pcrModel.class)
                         .build();
 
         mainAdapter=new MainpcrAdapter(options);
@@ -67,7 +68,7 @@ public class MainpcrActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.menu.searchpcr,menu);
+        getMenuInflater().inflate(R.layout.searchpcr,menu);
         MenuItem item= menu.findItem(R.id.searchpcr);
         SearchView searchView= (SearchView) item.getActionView();
 

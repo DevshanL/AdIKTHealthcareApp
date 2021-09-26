@@ -260,7 +260,7 @@ public class OrderedDeliveryItems extends AppCompatActivity {
                                 map.put("price",finalval);
                                 reference.updateChildren(map);
 
-                                Toast.makeText(OrderedDeliveryItems.this, "Updated successfully", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(OrderedDeliveryItems.this, "Update successfully", Toast.LENGTH_SHORT).show();
 
                                 alertDialog.dismiss();
                             }

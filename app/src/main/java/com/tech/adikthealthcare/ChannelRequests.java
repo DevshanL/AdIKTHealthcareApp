@@ -158,7 +158,7 @@ public class ChannelRequests extends AppCompatActivity {
                                     final String idd = user.get(position).getId();
                                     FirebaseDatabase.getInstance().getReference("ChannelRequests").child(idd).removeValue();
                                     //remove function not written
-                                    Toast.makeText(myContext, "Item deleted successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(myContext, " Channeling details deleted successfully", Toast.LENGTH_SHORT).show();
 
                                 }
                             })

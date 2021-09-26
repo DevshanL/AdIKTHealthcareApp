@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background1"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -17,12 +18,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/updateimage"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
+                app:civ_border_color="@color/btn"
+                app:civ_border_width="3dp"
                 app:srcCompat="@drawable/doctor" />
         </LinearLayout>
 
@@ -37,28 +40,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#F8F6F6" />
 
             <TextView
                 android:id="@+id/updateName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FFFAFA" />
 
             <TextView
                 android:id="@+id/updateSpeacial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FFFEFE" />
 
             <TextView
                 android:id="@+id/updateTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#FAF7F7" />
 
         </LinearLayout>
 
@@ -67,7 +74,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/purple_700"
+        android:background="@color/btn"
         android:orientation="vertical">
 
     </LinearLayout>
@@ -78,8 +85,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="User Details"
-        android:textColor="#000000"
-        android:textSize="20sp" />
+        android:textColor="#FAF6F6"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/updateUname"

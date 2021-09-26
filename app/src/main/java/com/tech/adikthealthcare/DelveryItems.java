@@ -200,14 +200,14 @@ public class DelveryItems extends AppCompatActivity {
                                         String name = textView2.getText().toString();
                                         Integer price = Integer.valueOf(textView3.getText().toString());
 
-                                        Integer tax = (price*2) / 100 ;
+                                        Integer tax = (price*2) / 100;
                                         Integer total = Integer.valueOf(price+tax);
                                         String finalval = String.valueOf(total * qtyval);
 
                                         OrderedItems orderedItems = new OrderedItems(id,name,finalval,qty,image,username,nic,contact,address);
                                         reference.child(id).setValue(orderedItems);
 
-                                        Toast.makeText(DelveryItems.this, "Successfully added", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(DelveryItems.this, "Item Successfully added", Toast.LENGTH_SHORT).show();
 
                                         alertDialog.dismiss();
                                     }

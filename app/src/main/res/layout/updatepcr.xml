@@ -140,11 +140,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="25dp"
         android:gravity="center"
         android:text="Update"
         android:textSize="21dp"
+        android:background="@drawable/rounded"
         app:backgroundTint="@color/btn" />
 
 

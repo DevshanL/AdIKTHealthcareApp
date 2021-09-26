@@ -13,7 +13,7 @@
         android:background="#862683AE">
 
 
-        <LinearLayou
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -28,7 +28,7 @@
                 app:civ_border_width="3dp"
                 android:layout_margin="5dp"
                 app:srcCompat="@drawable/health" />
-        </LinearLayou>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"

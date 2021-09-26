@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Go to Doctor Channelling list"
+        android:text="Go tooo Channelling list"
         android:textColor="#FFFFFF"
         app:backgroundTint="@color/btn" />
 

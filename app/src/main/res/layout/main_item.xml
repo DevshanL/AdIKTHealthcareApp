@@ -178,7 +178,7 @@
             android:layout_marginTop="370dp"
             android:layout_marginRight="75dp"
             android:gravity="left"
-            android:text="e-mail"
+            android:text="e-mail                 :"
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold" />

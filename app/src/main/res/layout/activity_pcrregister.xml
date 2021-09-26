@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtpcrReg"
+        android:id="@+id/txtpcrlist"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:background="@color/btn"

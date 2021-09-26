@@ -11,6 +11,8 @@ public class Dashboard extends AppCompatActivity {
 
     ImageView imageView1;
     ImageView imageView2;
+    ImageView imageView3;
+    ImageView imageView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,9 @@ public class Dashboard extends AppCompatActivity {
 
         imageView1 = (ImageView)findViewById(R.id.dChanel);
         imageView2 = (ImageView)findViewById(R.id.delivery);
+        imageView3= (ImageView)findViewById(R.id.dChanel1);
+
+
 
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +37,14 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, DelveryItems.class);
+                startActivity(intent);
+            }
+        });
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, pcrregister.class);
                 startActivity(intent);
             }
         });

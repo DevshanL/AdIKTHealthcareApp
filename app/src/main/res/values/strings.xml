@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AdIKT Healthcare</string>
+
+
+    <string name="txtpcrReg">PCR Registration</string>
+    <string name="textViewname">Name of Patient</string>
+    <string name="textViewnic">NIC</string>
+    <string name="textViewaddress">Address</string>
+    <string name="textViewmobile">Mobile NO</string>
+    <string name="textViewemail">Email</string>
+    <string name="buttonSave">Add Details</string>
+    <string name="buttonBack">Back</string>
+    <string name="textNopcr">textNopcr</string>
 </resources>

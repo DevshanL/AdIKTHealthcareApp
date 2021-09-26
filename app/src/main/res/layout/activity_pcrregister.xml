@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mad_main2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtpcrReg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="@string/txtpcrReg"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewname"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="@string/textViewname"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/textpnamepcr"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName"
+        android:hint="Patient Name"/>
+
+    <TextView
+        android:id="@+id/textViewnic"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="@string/textViewnic"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtnic"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textNopcr"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Number Of PCR"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtnopcr"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewaddress"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="@string/textViewaddress"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewmobile"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="@string/textViewmobile"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtmobile"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewemail"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/textViewemail"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtemail2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:text="@string/buttonSave" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:text="@string/buttonBack" />
+
+
+</LinearLayout>

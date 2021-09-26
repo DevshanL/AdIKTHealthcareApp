@@ -67,7 +67,7 @@ public class MainpcrActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        getMenuInflater().inflate(R.layout.searchpcr,menu);
+        getMenuInflater().inflate(R.menu.searchpcr,menu);
         MenuItem item= menu.findItem(R.id.searchpcr);
         SearchView searchView= (SearchView) item.getActionView();
 

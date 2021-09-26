@@ -36,7 +36,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
      * @param options
      */
     public <FirebaseRecyclerOptions> MainpcrAdapter(@NonNull FirebaseRecyclerOptions options) {
-        super((com.firebase.ui.database.FirebaseRecyclerOptions<pcrModel>) options);
+        super((com.firebase.ui.database.FirebaseRecyclerOptions<pcrModel>) options) ;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
           public void onClick(View view) {
               final DialogPlus dialogPlus= DialogPlus.newDialog(holder.name.getContext())
                       .setContentHolder(new ViewHolder(R.layout.updatepcr))
-                      .setExpanded(true,1300)
+                      .setExpanded(true,1900)
 
                       .create();
 
@@ -159,11 +159,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
         return new myViewHolder(view);
     }
 
-    public void startListening() {
-    }
 
-    public void stopListening() {
-    }
 
     class myViewHolder extends RecyclerView.ViewHolder{
 

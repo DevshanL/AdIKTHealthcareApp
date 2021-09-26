@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainpcrActivity">
+    tools:context=".MainpcrActivity"
+    android:background="@drawable/mad_main2">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvpcr"
@@ -33,5 +34,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.868"
         android:backgroundTint="#a1c4fd"
-        app:srcCompat="@drawable/pcr_add" />
+        app:srcCompat="@drawable/pcr_add"
+        tools:ignore="VectorDrawableCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>

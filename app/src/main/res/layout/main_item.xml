@@ -7,12 +7,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="6dp"
     android:elevation="6dp"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/mad_main2">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="50dp">
+        android:layout_height="373dp"
+        android:background="@drawable/mad_main2"
+        android:padding="15dp">
+
 
         <TextView
             android:id="@+id/pnamepcr"
@@ -21,13 +25,14 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginRight="75dp"
 
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
             android:text="Patient's Name"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
-
 
         <TextView
             android:id="@+id/pnicpcr"
@@ -38,10 +43,13 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginRight="75dp"
             android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
             android:text="Patient's NIC"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="NotSibling" />
 
 
@@ -50,14 +58,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pnicpcr"
-
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginRight="75dp"
             android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
             android:text="Number of PCR"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="NotSibling" />
 
         <TextView
@@ -65,14 +75,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pnopcr"
-
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginRight="75dp"
             android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
             android:text="Patient's Address"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="NotSibling" />
 
         <TextView
@@ -80,14 +92,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/paddresspcr"
-
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginRight="75dp"
             android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
             android:text="Patient's Mobile NO"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="NotSibling" />
 
         <TextView
@@ -95,36 +109,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pmobilepcr"
-
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
+            android:layout_marginRight="75dp"
             android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
             android:text="Patient's Email"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             tools:ignore="NotSibling" />
 
         <LinearLayout
-            android:layout_below="@id/pemailpcr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_below="@id/pemailpcr"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
 
             <Button
+                android:id="@+id/buttonedit"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="3dp"
                 android:text="Edit"
-                android:layout_margin="3dp"
-                android:id="@+id/buttonedit"/>
+                app:backgroundTint="@color/btn" />
 
 
             <Button
+                android:id="@+id/buttondelete"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="Delete"
                 android:layout_margin="3dp"
-                android:id="@+id/buttondelete"/>
+                android:layout_gravity="right"
+                android:text="Delete"
+                app:backgroundTint="#F44336"
+                android:layout_marginLeft="100dp"/>
 
 
         </LinearLayout>

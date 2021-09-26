@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/mad_main2">
 
    
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -14,12 +16,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Update Details"
-        android:background="@color/purple_500"
-        android:textSize="25dp"
+        android:background="@color/btn"
         android:gravity="center"
+        android:text="Update Details"
         android:textColor="#FFF"
-        />
+        android:textSize="25dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -135,15 +136,16 @@
         android:id="@+id/txtemail2"/>
 
     <Button
+        android:id="@+id/buttonUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
         android:text="Update"
         android:textSize="21dp"
-        android:gravity="center"
-        android:id="@+id/buttonUpdate"/>
+        app:backgroundTint="@color/btn" />
 
 
 

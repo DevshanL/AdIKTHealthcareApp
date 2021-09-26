@@ -156,7 +156,7 @@ public class OrderedDeliveryItems extends AppCompatActivity {
                                     final String idd = user.get(position).getId();
                                     FirebaseDatabase.getInstance().getReference("OrdereDeliveries").child(idd).removeValue();
                                     //remove function not written
-                                    Toast.makeText(myContext, "Item deleted successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(myContext, "Ite deleted successfully", Toast.LENGTH_SHORT).show();
 
                                 }
                             })

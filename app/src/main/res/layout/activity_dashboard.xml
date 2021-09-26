@@ -34,7 +34,7 @@
             android:orientation="vertical">
 
 
-            <ImageView
+            <ImageVie
                 android:id="@+id/dChanel"
                 android:layout_width="107dp"
                 android:layout_height="103dp"

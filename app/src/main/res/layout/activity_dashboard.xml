@@ -62,7 +62,7 @@
                 android:layout_width="114dp"
                 android:layout_height="105dp"
                 android:rotationX="21"
-                app:srcCompat="@drawable/deliver" />
+                app:srcCompat="@drawable/delivery" />
 
             <ImageView
                 android:id="@+id/delivery2"

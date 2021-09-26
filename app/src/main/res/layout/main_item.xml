@@ -151,7 +151,7 @@
             android:layout_marginTop="310dp"
             android:layout_marginRight="75dp"
             android:gravity="left"
-            android:text="Mobile"
+            android:text="Mobile                :"
             android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold" />

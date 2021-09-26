@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:ems="10"
-        android:hint="Enter NIC number"
+        android:hint="Enter NI number"
         android:inputType="textPersonName" />
 
     <EditText

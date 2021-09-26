@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:text="Delet"
+                android:text="Delete"
                 android:textColor="#FFFFFF"
                 app:backgroundTint="@android:color/holo_red_light"
                 app:srcCompat="@drawable/delete" />

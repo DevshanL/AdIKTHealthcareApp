@@ -13,7 +13,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="520dp"
+        android:layout_height="615dp"
         android:background="@drawable/mad_main2"
         android:padding="15dp">
 
@@ -196,12 +196,39 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/pcrpricetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginRight="75dp"
+            android:gravity="left"
+            android:text="TotalPriceOfPCR "
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/pcrprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:layout_marginRight="75dp"
+            android:gravity="right"
+            android:text="@string/pcrprice"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/pemailpcr"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="80dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 

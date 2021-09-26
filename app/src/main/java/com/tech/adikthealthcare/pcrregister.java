@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -23,7 +24,7 @@ public class pcrregister extends AppCompatActivity {
 
     EditText name,nic,noPcr,address,mobile,email;
     Button buttonSave,buttonBack;
-
+    TextView pcrPrice;
     pcrModel pcrpatient;
 
     DatabaseReference db;
@@ -38,6 +39,9 @@ public class pcrregister extends AppCompatActivity {
         mobile=findViewById(R.id.txtmobile);
         email=findViewById(R.id.txtemail2);
 
+        pcrPrice= findViewById(R.id.pcrprice);
+
+
         buttonSave=findViewById(R.id.buttonSave);
         buttonBack=findViewById(R.id.buttonBack);
 
@@ -47,6 +51,7 @@ public class pcrregister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 insertpcrData();
+
                 clearPCR();
 
 
@@ -86,6 +91,14 @@ public class pcrregister extends AppCompatActivity {
             map.put("mobile", mobile.getText().toString());
             map.put("email", email.getText().toString());
 
+            Integer no = Integer.valueOf(noPcr.getText().toString());
+            String pcrPrice  = String.valueOf(no*1500);
+            map.put("pcrPrice",String.valueOf(pcrPrice));
+
+
+
+
+
             FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
                     .getReference().child("patients_pcr").push()
                     .setValue(map)
@@ -113,6 +126,12 @@ public class pcrregister extends AppCompatActivity {
         address.setText("");
         mobile.setText("");
         email.setText("");
+
+
+
     }
+
+
+
 
 }

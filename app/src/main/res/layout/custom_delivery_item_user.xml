@@ -24,7 +24,7 @@
                 android:layout_height="150dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                app:srcCompat="@drawable/health" />
+                app:srcCompat="@drawable/lmb" />
         </LinearLayout>
 
         <LinearLayout

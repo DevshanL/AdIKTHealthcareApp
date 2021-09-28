@@ -11,6 +11,21 @@
     android:background="@drawable/mad_main2">
 
 
+    <TextView
+        android:id="@+id/txtpcrlist"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/btn"
+        android:backgroundTint="@color/btn"
+        android:gravity="center_horizontal"
+        android:text="Registered List for PCR"
+        android:textAlignment="center"
+        android:textColor="#F3F2F2"
+        android:textSize="20sp" />
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="615dp"
@@ -18,18 +33,6 @@
         android:padding="15dp">
 
 
-        <TextView
-            android:id="@+id/txtpcrlist"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/btn"
-            android:backgroundTint="@color/btn"
-            android:gravity="center_horizontal"
-            android:text="Registered List for PCR"
-            android:textAlignment="center"
-            android:textColor="#F3F2F2"
-            android:textSize="20sp" />
 
 
         <TextView

@@ -23,6 +23,8 @@
         android:layout_height="32dp"
         android:text="@string/textViewname"
         android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
 
         android:layout_gravity="center"/>
 
@@ -42,7 +44,9 @@
         android:layout_height="32dp"
         android:text="@string/textViewnic"
         android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/txtnic"
@@ -60,7 +64,9 @@
         android:layout_height="32dp"
         android:text="Number Of PCR"
         android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/txtnopcr"
@@ -68,8 +74,9 @@
         android:layout_height="35dp"
         android:ems="10"
         android:background="@drawable/rounded"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:hint="Count of PCR"
+
         android:gravity="center_horizontal"/>
 
     <TextView
@@ -79,6 +86,8 @@
         android:text="@string/textViewaddress"
         android:textAlignment="center"
         android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -97,7 +106,9 @@
         android:layout_height="39dp"
         android:text="@string/textViewmobile"
         android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/txtmobile"
@@ -105,7 +116,7 @@
         android:layout_height="35dp"
         android:ems="10"
         android:background="@drawable/rounded"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:hint="mobile"
         android:gravity="center_horizontal"/>
 
@@ -115,7 +126,9 @@
         android:layout_height="38dp"
         android:text="@string/textViewemail"
         android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/txtemail2"

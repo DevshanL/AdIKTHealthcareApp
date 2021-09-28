@@ -1,10 +1,14 @@
 package com.tech.adikthealthcare;
 
+import android.widget.Button;
+
 public class pcrModel {
     String name,nic,address,email;
     String mobile;
     String noPcr;
     String pcrPrice;
+
+
 
     public pcrModel(){
 

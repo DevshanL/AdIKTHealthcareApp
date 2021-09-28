@@ -3,13 +3,16 @@ package com.tech.adikthealthcare;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Context;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,13 +47,12 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
     protected void onBindViewHolder(@NonNull myViewHolder holder, @SuppressLint("RecyclerView") final int position, @NonNull pcrModel model) {
         holder.name.setText((model.getName()));
         holder.nic.setText(model.getNic());
-         holder.noPcr.setText(model.getNoPcr());
+        holder.noPcr.setText(model.getNoPcr());
         holder.address.setText(model.getAddress());
         holder.mobile.setText(model.getMobile());
         holder.email.setText(model.getEmail());
         holder.pcrPrice.setText(model.getPcrPrice());
 
-        
 
 
 
@@ -58,105 +60,147 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
 
 
 
-      holder.buttonedit.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              final DialogPlus dialogPlus= DialogPlus.newDialog(holder.name.getContext())
-                      .setContentHolder(new ViewHolder(R.layout.updatepcr))
-                      .setExpanded(true,1700)
 
-                      .create();
-
-
-
-             View view1 = dialogPlus.getHolderView();
-
-              EditText name = view1.findViewById(R.id.textpnamepcr);
-              EditText nic = view1.findViewById(R.id.txtnic);
-              EditText noPcr= view1.findViewById(R.id.txtnopcr);
-              EditText address= view1.findViewById(R.id.txtaddress);
-              EditText mobile= view1.findViewById(R.id.txtmobile);
-              EditText email = view1.findViewById(R.id.txtemail2);
-
-
-              Button buttonUpdate = view1.findViewById(R.id.buttonUpdate);
-
-              name.setText(model.getName());
-              nic.setText(model.getNic());
-              noPcr.setText(model.getNoPcr());
-              address.setText(model.getAddress());
-              mobile.setText(model.getMobile());
-              email.setText(model.getEmail());
-
-               dialogPlus.show();
-
-               buttonUpdate.setOnClickListener(new View.OnClickListener() {
-                   @Override
-                   public void onClick(View view) {
-                       Map<String,Object> map= new HashMap<>();
-                       map.put("name",name.getText().toString());
-                       map.put("nic",nic.getText().toString());
-                       map.put("noPcr",noPcr.getText().toString());
-                       map.put("address",address.getText().toString());
-                       map.put("mobile",mobile.getText().toString());
-                       map.put("email",email.getText().toString());
-
-                       FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
-                               .getReference().child("patients_pcr")
-                               .child(Objects.requireNonNull(getRef(position).getKey())).updateChildren(map)
-                               .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                   @Override
-                                   public void onSuccess(Void unused) {
-                                       Toast.makeText(holder.name.getContext(),"Update Successfully",Toast.LENGTH_LONG).show();
-                                       dialogPlus.dismiss();
-
-                                   }
-                               })
-                               .addOnFailureListener(new OnFailureListener() {
-                                   @Override
-                                   public void onFailure(@NonNull Exception e) {
-                                       Toast.makeText(holder.name.getContext(),"Error Updating",Toast.LENGTH_LONG).show();
-                                   }
-                               });
+        holder.buttonedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final DialogPlus dialogPlus= DialogPlus.newDialog(holder.name.getContext())
+                        .setContentHolder(new ViewHolder(R.layout.updatepcr))
+                        .setExpanded(false,1900)
+                        .create();
 
 
 
+                View view1 = dialogPlus.getHolderView();
 
-                   }
-               });
-
-
-
-          }
-      });
-
-      holder.buttondelete.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              AlertDialog.Builder builder= new AlertDialog.Builder(holder.name.getContext());
-              builder.setTitle("Are you sure?");
-              builder.setMessage("Delete can not be undo!");
-
-              builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
-                  @Override
-                  public void onClick(DialogInterface dialog, int which) {
-                      FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr")
-                              .child(getRef(position).getKey()).removeValue();
-
-                  }
-              });
-              builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                  @Override
-                  public void onClick(DialogInterface dialog, int which) {
-                      Toast.makeText(holder.name.getContext(),"Delete cancelled",Toast.LENGTH_LONG).show();
-
-                  }
-              });
-              builder.show();
+                EditText name = view1.findViewById(R.id.textpnamepcr);
+                EditText nic = view1.findViewById(R.id.txtnic);
+                EditText noPcr= view1.findViewById(R.id.txtnopcr);
+                EditText address= view1.findViewById(R.id.txtaddress);
+                EditText mobile= view1.findViewById(R.id.txtmobile);
+                EditText email = view1.findViewById(R.id.txtemail2);
 
 
-          }
-      });
+                Button buttonUpdate = view1.findViewById(R.id.buttonUpdate);
+
+                name.setText(model.getName());
+                nic.setText(model.getNic());
+                noPcr.setText(model.getNoPcr());
+                address.setText(model.getAddress());
+                mobile.setText(model.getMobile());
+                email.setText(model.getEmail());
+
+                dialogPlus.show();
+
+                buttonUpdate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+//                        String pname = name.getText().toString().trim();
+//                        String pnic = nic.getText().toString().trim();
+//                        String pnopcr = noPcr.getText().toString().trim();
+//                        String paddress = address.getText().toString().trim();
+//                        String pmobile = mobile.getText().toString().trim();
+//                        String pemail = email.getText().toString().trim();
+//
+//                        if (pname.isEmpty()) {
+//                            name.setError("Name is required");
+//                            name.requestFocus();
+//                        } else if (pnic.isEmpty()) {
+//                            nic.setError("NIC is required");
+//                        } else if (!pnic.matches("[0-9+]{10}[vV|xX]$")) {
+//
+//                        } else if (pnopcr.isEmpty()) {
+//                            noPcr.setError("No PCR is required");
+//                            noPcr.requestFocus();
+//                        } else if (paddress.isEmpty()) {
+//                            address.setError("Address is required ");
+//                            address.requestFocus();
+//                        } else if (pmobile.isEmpty()) {
+//                            mobile.setError("Mobile is Required");
+//                            mobile.requestFocus();
+//                        } else if (!pmobile.matches("[0-9]{10}$")) {
+//                            mobile.setError("Please enter valid Mobile number");
+//                            mobile.requestFocus();
+//
+//                        } else if (pemail.isEmpty()) {
+//                            email.setError("Email is required");
+//                            email.requestFocus();
+//                        } else if (!pemail.matches("/^([A-Za-z0-9_\\-\\.])+\\@([A-Za-z0-9_\\-\\.])+\\.([A-Za-z]{2,4})$/")) {
+//                            email.setError("Please enter valid Email");
+//                            email.requestFocus();
+//                        } else {
+                            Map<String, Object> map = new HashMap<>();
+                            map.put("name", name.getText().toString());
+                            map.put("nic", nic.getText().toString());
+                            map.put("noPcr", noPcr.getText().toString());
+                            map.put("address", address.getText().toString());
+                            map.put("mobile", mobile.getText().toString());
+                            map.put("email", email.getText().toString());
+
+                            Integer no = Integer.valueOf(noPcr.getText().toString());
+                            String pcrPrice = String.valueOf(no * 1500);
+                            map.put("pcrPrice", String.valueOf(pcrPrice));
+
+                            FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/")
+                                    .getReference().child("patients_pcr")
+                                    .child(Objects.requireNonNull(getRef(position).getKey())).updateChildren(map)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+                                            Toast.makeText(holder.name.getContext(), "Update Successfully", Toast.LENGTH_LONG).show();
+                                            dialogPlus.dismiss();
+
+                                        }
+                                    })
+                                    .addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            Toast.makeText(holder.name.getContext(), "Error Updating", Toast.LENGTH_LONG).show();
+                                        }
+                                    });
+
+
+                        }
+
+
+                });
+
+
+
+            }
+        });
+
+
+
+
+
+        holder.buttondelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder= new AlertDialog.Builder(holder.name.getContext());
+                builder.setTitle("Are you sure?");
+                builder.setMessage("Delete can not be undo!");
+
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseDatabase.getInstance("https://adikt-healthcare-default-rtdb.firebaseio.com/").getReference().child("patients_pcr")
+                                .child(getRef(position).getKey()).removeValue();
+
+                    }
+                });
+                builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(holder.name.getContext(),"Delete cancelled",Toast.LENGTH_LONG).show();
+
+                    }
+                });
+                builder.show();
+
+
+            }
+        });
     }
 
     @NonNull
@@ -170,7 +214,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
 
     class myViewHolder extends RecyclerView.ViewHolder{
 
-        
+
         TextView name,nic,noPcr,address,mobile,email,pcrPrice;
         Button buttonedit,buttondelete;
 
@@ -184,7 +228,7 @@ public class MainpcrAdapter extends FirebaseRecyclerAdapter<pcrModel, MainpcrAda
             mobile=(TextView)itemView.findViewById(R.id.pmobilepcr);
             email=(TextView) itemView.findViewById(R.id.pemailpcr);
             pcrPrice=(TextView) itemView.findViewById(R.id.pcrprice);
-            
+
 
             buttonedit= (Button) itemView.findViewById(R.id.buttonedit);
             buttondelete=(Button)itemView.findViewById(R.id.buttondelete);

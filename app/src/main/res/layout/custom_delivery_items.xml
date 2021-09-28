@@ -27,7 +27,7 @@
                 app:civ_border_color="@color/btn"
                 app:civ_border_width="3dp"
                 android:layout_margin="5dp"
-                app:srcCompat="@drawable/health" />
+                app:srcCompat="@drawable/lmb" />
         </LinearLayout>
 
         <LinearLayout
